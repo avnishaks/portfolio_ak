@@ -5,7 +5,7 @@ import React from 'react'
 import profilePics from '../../public/images/profile/bike.png'
 import Image from 'next/image'
 
-function About() {
+export default function About(){
     return (
         <>
             <Head>
@@ -67,5 +67,3 @@ function About() {
         </>
     )
 }
-
-export default About
