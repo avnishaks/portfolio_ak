@@ -1,11 +1,23 @@
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
-import React from 'react'
 import profilePics from '../../public/images/profile/bike.png'
 import Image from 'next/image'
+import React, { useState, useEffect } from 'react';
 
 export default function About(){
+
+    const [years, setYears] = useState(0);
+
+    useEffect(() => {
+      const currentDate = new Date();
+      const startDate = new Date('2022-06-01'); 
+      const timeDifference = currentDate - startDate;
+      const yearsDifference = timeDifference / (1000 * 60 * 60 * 24 * 365);
+      setYears(Math.ceil(yearsDifference));
+    }, []);
+
+    
     return (
         <>
             <Head>
@@ -56,7 +68,7 @@ export default function About(){
                                 <h2 className="text-xl font-medium capitalize text-dark">LeetCode Problem Solved</h2>
                             </div>
                             <div className="flex flex-col items-end justify-center">
-                                <span className="inline-block text-7xl font-bold">2+</span>
+                                <span className="inline-block text-7xl font-bold">{years > 0 ? `${years}+` : '0+'}</span>
                                 <h2 className="text-xl font-medium capitalize text-dark">years of experience</h2>
                             </div>
                         </div>
