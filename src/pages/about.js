@@ -1,7 +1,7 @@
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
-import profilePics from '../../public/images/profile/personal.png'
+import profilePics from '../../public/images/profile/profile.png'
 import Image from 'next/image'
 import React, { useState, useEffect, useRef } from 'react';
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
