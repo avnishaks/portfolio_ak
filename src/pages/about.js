@@ -21,7 +21,7 @@ export default function About(){
     return (
         <>
             <Head>
-                <title>Avnish Kumar | About us</title>
+                <title>Avnish Kumar | About </title>
                 <meta name="description" content="any description" />
             </Head>
             <main className="flex flex-col items-center justify-center pt-16">
