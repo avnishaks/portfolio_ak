@@ -3,7 +3,35 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import profilePics from '../../public/images/profile/bike.png'
 import Image from 'next/image'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { useInView, useMotionValue, useSpring } from 'framer-motion'
+
+const AnimateNumber = ({value}) =>{
+    const ref= useRef(null);
+    const motionValue = useMotionValue(0);
+    const springValue= useSpring(motionValue,{duration:3000});
+    const isInView = useInView(ref);
+
+    useEffect(()=>{
+        if(isInView){
+            motionValue.set(value)
+        }
+    },[isInView,value,motionValue])
+
+    useEffect(()=>{
+        springValue.on("change",(latest)=>{
+            if(ref.current && latest.toFixed(0)<=value){
+                ref.current.textContent= latest.toFixed(0)
+            }
+        })
+    },[springValue,value])
+
+    return <span ref={ref}></span>
+
+}
+
+
+
 
 export default function About(){
 
@@ -60,11 +88,11 @@ export default function About(){
                         </div>
                         <div className="col-span-2 flex flex-col items-end justify-between">
                             <div className="flex flex-col items-end justify-center">
-                                <span className="inline-block text-7xl font-bold">4*</span>
+                                <span className="inline-block text-7xl font-bold"><AnimateNumber value={4}/>*</span>
                                 <h2 className="text-xl font-medium capitalize text-dark">CodeChef</h2>
                             </div>
                             <div className="flex flex-col items-end justify-center">
-                                <span className="inline-block text-7xl font-bold">650+</span>
+                                <span className="inline-block text-7xl font-bold"><AnimateNumber value={650}/>+</span>
                                 <h2 className="text-xl font-medium capitalize text-dark">LeetCode Problem Solved</h2>
                             </div>
                             <div className="flex flex-col items-end justify-center">
