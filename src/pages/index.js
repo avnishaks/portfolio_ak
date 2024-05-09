@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Avnish Portfolio</title>
+        <title>Avnish | Portfolio</title>
         <meta name="description" content="Made by Avnish Kumar" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
