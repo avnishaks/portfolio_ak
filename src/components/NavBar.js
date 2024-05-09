@@ -3,7 +3,7 @@ import React from 'react'
 import { Logo } from './Logo'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { GithubIcon, LeetCodeIcons, LinkedInIcon, MoonIcon, SunIcon, TwitterIcon } from './Icons'
+import { GithubIcon, InstagramIcons, LeetCodeIcons, LinkedInIcon, MoonIcon, SunIcon, TwitterIcon, YouTubeIcon } from './Icons'
 import {motion} from 'framer-motion'
 
 const CustomLink =({href,title,className=''})=>{
@@ -39,8 +39,8 @@ const NavBar = () => {
                 <motion.a href="https://twitter.com/avnish_aks" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}} className='w-6 mr-3'><TwitterIcon/></motion.a>
                 <motion.a href="https://www.linkedin.com/in/avnishaks/" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}} className='w-6 mr-3'><LinkedInIcon/></motion.a>
                 <motion.a href="https://leetcode.com/u/avnishaks/" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}} className='w-6 mr-3'><LeetCodeIcons/></motion.a>
-                <motion.a href="/" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}} className='w-6 mr-3'><SunIcon/></motion.a>
-                <motion.a href="/" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}} className='w-6 mr-3'><MoonIcon/></motion.a>
+                <motion.a href="https://www.instagram.com/avnishaks/" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}} className='w-6 mr-3'><InstagramIcons/></motion.a>
+                <motion.a href="https://www.youtube.com/@avnishaks" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}} className='w-6 mr-3'><YouTubeIcon/></motion.a>
             </nav>
 
             <div className='absolute left-[50%] top-2 translate-x-[-50%]'>

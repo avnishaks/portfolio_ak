@@ -19,22 +19,22 @@ export default function About(){
                         <div className="col-span-3 flex flex-col items-start justify-start">
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">Biography</h2>
                             <p className="font-medium">
-                                Hi, I'm Avnish, an adventurous soul exploring the world on my trusty bike,
+                                Hi, I&apos;m Avnish, an adventurous soul exploring the world on my trusty bike,
                                 always in search of the unexplored. From remote mountain trails to bustling city
-                                streets, I thrive on the excitement of discovery and the opportunity to connect
+                                streets&sbquo; I thrive on the excitement of discovery and the opportunity to connect
                                 with people from diverse cultures.
                             </p>
                             <p className="my-4 font-medium">
-                                With a passion for gaming, coding, and software engineering, I'm constantly seeking
-                                new challenges in both virtual and real-life environments. Whether it's developing
-                                a website, crafting a mobile app, or tackling complex Backend system design, I bring a
-                                dedication to design excellence and user-centered thinking to every endeavor.
+                                With a passion for gaming&sbquo; coding&sbquo; and software engineering, I&apos;m constantly seeking
+                                new challenges in both virtual and real	&ndash;life environments. Whether it&apos;s developing
+                                a website&sbquo; crafting a mobile app&sbquo; or tackling complex Backend system design&sbquo; I bring a
+                                dedication to design excellence and user&ndash;centered thinking to every endeavor.
                             </p>
                             <p className="font-medium">
-                                When I'm not immersed in coding or exploring new horizons, you'll often find me on the
-                                sports field. Football, badminton, cricket – these outdoor activities not only keep me
+                                When I&apos;m not immersed in coding or exploring new horizons, you&apos;ll often find me on the
+                                sports field. Football&sbquo; badminton&sbquo; cricket these outdoor activities not only keep me
                                 physically active but also foster camaraderie and friendly competition with fellow
-                                enthusiasts. I believe in the balance between mind and body, finding inspiration and
+                                enthusiasts. I believe in the balance between mind and body&sbquo; finding inspiration and
                                 rejuvenation through both intellectual and physical pursuits.
                             </p>
                         </div>
@@ -48,7 +48,7 @@ export default function About(){
                         </div>
                         <div className="col-span-2 flex flex-col items-end justify-between">
                             <div className="flex flex-col items-end justify-center">
-                                <span className="inline-block text-7xl font-bold">4 * </span>
+                                <span className="inline-block text-7xl font-bold">4*</span>
                                 <h2 className="text-xl font-medium capitalize text-dark">CodeChef</h2>
                             </div>
                             <div className="flex flex-col items-end justify-center">
