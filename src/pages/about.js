@@ -5,6 +5,7 @@ import profilePics from '../../public/images/profile/bike.png'
 import Image from 'next/image'
 import React, { useState, useEffect, useRef } from 'react';
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
+import { Skills } from '@/components/Skills'
 
 const AnimateNumber = ({value}) =>{
     const ref= useRef(null);
@@ -101,6 +102,7 @@ export default function About(){
                             </div>
                         </div>
                     </div>
+                    <Skills/>
                 </Layout>
             </main>
 
