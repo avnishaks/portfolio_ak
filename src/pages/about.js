@@ -98,7 +98,8 @@ export default function About(){
                                 <h2 className="text-xl font-medium capitalize text-dark">LeetCode Problem Solved</h2>
                             </div>
                             <div className="flex flex-col items-end justify-center">
-                                <span className="inline-block text-7xl font-bold">{years > 0 ? `${years}+` : '0+'}</span>
+                                <span className="inline-block text-7xl font-bold">
+                                    <AnimateNumber value={years}/>+</span>
                                 <h2 className="text-xl font-medium capitalize text-dark">years of experience</h2>
                             </div>
                         </div>
