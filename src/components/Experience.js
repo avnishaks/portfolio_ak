@@ -3,14 +3,14 @@ import { motion, useScroll } from 'framer-motion';
 import LiIcon from './LiIcon';
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
-    const ref=useRef(null);
+    const ref = useRef(null);
 
-    return <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col justify-between'>
+    return <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col justify-between md:w-[80%]'>
         <LiIcon reference={ref} />
-        <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5,type:"spring"}}>
-            <h3 className="capitalize font-bold text-2xl">{position}&nbsp;<a href={companyLink} target="_blank" className="capitalize text-primary dark:text-primaryDark">@{company}</a></h3>
-            <span className="capitalize font-medium text-dark/75">{time} | {address}</span>
-            <p className="font-medium w-full">{work}</p>
+        <motion.div initial={{ y: 50 }} whileInView={{ y: 0 }} transition={{ duration: 0.5, type: "spring" }}>
+            <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">{position}&nbsp;<a href={companyLink} target="_blank" className="capitalize text-primary dark:text-primaryDark">@{company}</a></h3>
+            <span className="capitalize font-medium text-dark/75 xs:text-sm">{time} | {address}</span>
+            <p className="font-medium w-full md:text-sm">{work}</p>
         </motion.div>
     </li>
 }
@@ -25,31 +25,45 @@ export const Experience = () => {
     })
     return (
         <div className='my-64'>
-            <h2 className='font-bold text-8xl mb-32 w-full text-center'>
+            <h2 className='font-bold text-8xl mb-32 w-full text-center md:mb-16 md:text-6xl xs:text-4xl'>
                 Experience
             </h2>
-            <div ref={ref} className='w-[75%] mx-auto relative'>
-                <motion.div style={{ scaleY: scrollYProgress }} className='absolute left-8 top-0 w-[4px] h-full bg-dark origin-top' />
-                <ul className='w-full flex flex-col items-start justify-between ml-10'>
+            <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
+                <motion.div style={{ scaleY: scrollYProgress }} className='absolute left-8 top-0 w-[4px] h-full bg-dark origin-top dark:bg-primaryDark
+                    md:w-[2px] md:left-[30px] xs:left-[20px]
+                ' />
+                <ul className='w-full flex flex-col items-start justify-between ml-10 xs:ml-2'>
                     <Details
                         position={"Software Engineer"}
                         company={"ACKO"}
                         companyLink={"https://www.acko.com/"}
                         time={"June,2022 - Present"}
                         address={"Bangalore, Karnataka"}
-                        work={`
-                            At Acko, I spearheaded the development of a common Mobile App Framework for the Central App team,
-                            which is used across all Lines of Business (LOB) to automate their use cases. This framework integrates 
-                            both Flutter Driver and UiAutomator2 Driver to support native Android and Flutter components. In addition, 
-                            I managed the automation of mobile, web, and backend APIs, incorporating over 800 test cases using Katalon 
-                            Studio for dynamic UI components and UIAutomator2 for static pages, along with web UI and recurring payment 
-                            backend API automation. I also created the QA-One Automation Dashboard, a user-friendly and maintainable central 
-                            test hub that provides critical insights into the automation coverage's health and efficacy across various services. 
-                            Furthermore, I established an in-house Mobile Device Lab as an alternative to BrowserStack. This lab supports remote 
-                            automation suite execution, device sharing, and parallel test execution through a distributed Appium setup, allowing 
-                            seamless script execution via Jenkins and providing complete control over the testing environment, with scalability to 
-                            include new devices.
-                        `}
+                        work={
+                            <>
+                                <p className='capitalize font-medium text-dark/75 dark:text-light'>
+                                    <span className='text-black font-medium dark:text-white'> 1. Mobile App Automation Framework Development </span>
+                                </p>
+                                <p className='capitalize font-medium text-dark/75 dark:text-light'>
+                                    <span className=' text-black  font-medium dark:text-white'> 2. Automation of Mobile , Web and Backend API </span>
+                                </p>
+                                <p className='capitalize font-medium text-dark/75 dark:text-light'>
+                                    <span className='text-black  font-medium dark:text-white'> 3. Automation Dashboard ( Design : Frontend & Backend )</span>
+                                </p>
+                                <p className='capitalize font-medium text-dark/75 dark:text-light'>
+                                    <span className='text-black  font-medium dark:text-white'> 4. In House Mobile Device Lab </span>
+                                </p>
+                                <p className='capitalize font-medium text-dark/75 dark:text-light'>
+                                    <span className='text-black  font-medium dark:text-white'> 5. Mocking of External Third Party Services </span>
+                                </p>
+                                <p className='capitalize font-medium text-dark/75 dark:text-light'>
+                                    <span className='text-black  font-medium dark:text-white'> 6. Building In-House GPT (GenAI model) of Acko - Jankari Hub </span>
+                                </p>
+
+
+                            </>
+
+                        }
                     />
 
                     <Details
