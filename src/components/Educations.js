@@ -40,7 +40,7 @@ export const Educations = () => {
                     />
 
                     <Details
-                        type="PCM : Pre University "
+                        type="Higher Secondary Certificate"
                         time="2015-2017"
                         place="Vaishali,Bihar, India"
                         grade={"74.2%"}
@@ -50,7 +50,7 @@ export const Educations = () => {
 
 
                     <Details
-                        type="Matriculation"
+                        type="Secondary School Certificate"
                         time="2014-2015"
                         place="Vaishali,Bihar, India"
                         grade={"CGPA: 10"}
