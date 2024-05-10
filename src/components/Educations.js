@@ -2,14 +2,14 @@ import React, { useRef } from 'react'
 import { motion, useScroll } from 'framer-motion';
 import LiIcon from './LiIcon';
 
-const Details = ({ type, time, address, grade,board }) => {
+const Details = ({ type, time, college, grade,board }) => {
     const ref = useRef(null);
 
     return <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col justify-between'>
         <LiIcon reference={ref} />
         <motion.div initial={{ y: 50 }} whileInView={{ y: 0 }} transition={{ duration: 0.5, type: "spring" }}>
             <h3 className="capitalize font-bold text-2xl">{type}</h3>
-            <span className="capitalize font-medium text-dark/75">{time} | {board} | {grade} </span>
+            <span className="capitalize font-medium text-dark/75">{time} | {board} | {grade} | {college} </span>
         </motion.div>
     </li>
 }
@@ -36,6 +36,7 @@ export const Educations = () => {
                         place="Punjab, India"
                         grade={"CGPA: 8.6"}
                         board="CBSE"
+                        college="Lovely Professional University"
                     />
 
                     <Details
@@ -44,6 +45,7 @@ export const Educations = () => {
                         place="Vaishali,Bihar, India"
                         grade={"74.2%"}
                         board="BSEB"
+                        college="A.B.S College"
                     />
 
 
@@ -53,6 +55,7 @@ export const Educations = () => {
                         place="Vaishali,Bihar, India"
                         grade={"CGPA: 10"}
                         board="CBSE"
+                        college="St. Paul's High School"
                     />
 
 
