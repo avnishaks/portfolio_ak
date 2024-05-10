@@ -109,7 +109,6 @@ export default function About(){
                             </div>
                         </div>
                     </div>
-                    <HireMe/>
                     <Skills/>
                     <Experience/>
                     <Educations/>
