@@ -34,7 +34,7 @@ export const Experience = () => {
                     <Details
                         position={"Software Engineer"}
                         company={"ACKO"}
-                        companyLink={"www.acko.com"}
+                        companyLink={"https://www.acko.com/"}
                         time={"June,2022 - Present"}
                         address={"Bangalore, Karnataka"}
                         work={`
