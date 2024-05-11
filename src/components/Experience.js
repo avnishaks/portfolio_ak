@@ -78,7 +78,7 @@ export const Experience = () => {
                     <Details
                         position={"Software Engineer Intern"}
                         company={"ACKO"}
-                        companyLink={"www.acko.com"}
+                        companyLink={"https://www.acko.com/"}
                         time={"Aug,2021 - May,2022"}
                         address={"Bangalore, Karnataka"}
                         work={`Automation of app test cases with 100% coverage has made the release cycle faster by two days and reduced manual effort to zero.`}
