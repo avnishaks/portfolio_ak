@@ -8,7 +8,7 @@ export const Footer = () => {
             <Layout className="py-8 flex items-center justify-between lg:flex-col lg:py-6">
                     <span>&copy; {new Date().getFullYear()} All Rights Reserved.</span>
                     <div className="flex items-center">
-                        <span className="text-primary text-2xl px-1">❤</span>
+                        <span className="text-primary text-2xl px-1"></span>
                         Build With <span className="text-primary dark:text-primaryDark text-2xl px-1">&#9825;</span>
                         by&nbsp;<Link href="https://www.linkedin.com/in/avnishaks/" className="underline underline-offset-2" target="_blank">AKS</Link>
                     </div>
