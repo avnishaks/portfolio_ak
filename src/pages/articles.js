@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Link from 'next/link';
 import axios from 'axios';
 import Image from 'next/image';
-import { extractThumbnail, formatDate } from '@/components/utils';
+import { extractThumbnail, formatDate } from '@/components/Utils';
 
 
 const FramerImage = motion(Image);
