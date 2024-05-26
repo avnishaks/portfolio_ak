@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 import Link from 'next/link';
 import axios from 'axios';
 import Image from 'next/image';
-import {formatDate} from './utils';
+import { extractThumbnail, formatDate } from '@/components/utils';
+
 
 const FramerImage = motion(Image);
 
@@ -35,15 +36,12 @@ const FeaturedArticle = ({ img, title, time, link }) => {
           {title}
         </h2>
       </Link>
-      <span className="text-primary font-semibold">{time}</span>
+      <span className=" text-primary dark:text-primaryDark font-bold">{time}</span>
     </li>
   );
 };
 
-const extractThumbnail = (description) => {
-  const match = description.match(/<img[^>]+src="([^">]+)"/);
-  return match ? match[1] : 'https://via.placeholder.com/150';
-};
+
 
 export async function getStaticProps() {
   try {
@@ -92,7 +90,7 @@ export default function Articles({ articles }) {
           <ul className="grid grid-cols-2 gap-16 md:grid-cols-1">
             {articles.map((article, index) => (
               <FeaturedArticle
-                
+                key={index}
                 img={article.thumbnail}
                 title={article.title}
                 time={article.pubDate}
