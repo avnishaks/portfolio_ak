@@ -43,7 +43,7 @@ const FeaturedArticle = ({ img, title, time, link }) => {
 
 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   try {
     const username = 'avnishaks';
     const rssUrl = `https://medium.com/feed/@${username}`;
