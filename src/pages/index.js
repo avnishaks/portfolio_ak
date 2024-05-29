@@ -30,12 +30,7 @@ export default function Home() {
                 xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl
               " />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
-                With expertise in React.js and comprehensive experience in backend development, I craft robust solutions
-                that power seamless user experiences. My portfolio also highlights my capabilities in automation and
-                generative AI, showcasing cutting-edge projects that leverage advanced technologies. Explore my latest
-                work and articles to see how I blend technical proficiency with creative innovation to deliver exceptional
-                digital products.
+                  As a skilled problem-solving software engineer, I am dedicated to transforming ideas into innovative web applications. With expertise in React.js and extensive experience in backend development, I craft robust solutions that power seamless user experiences. My portfolio highlights my capabilities in automation and generative AI, showcasing cutting-edge projects that leverage advanced technologies. Explore my latest work and articles to see how I blend technical proficiency with creative innovation to deliver exceptional digital products.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link href="Avnish_Resume.pdf" target="_blank" className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark
