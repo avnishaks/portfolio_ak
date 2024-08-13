@@ -61,7 +61,7 @@ export const Educations = () => {
                         type="Secondary School Certificate"
                         time="2014-2015"
                         place="Lalganj,Vaishali,Bihar,India"
-                        grade="95%"
+                        grade="10 CGPA"
                         board="CBSE"
                         college="St. Paul's High School"
                     />
