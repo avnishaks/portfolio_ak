@@ -56,6 +56,8 @@ export const Skills = () => {
                 <Skill name="Tailwind CSS" x="18vw" y="18vw" />
                 <Skill name="Framer Motion" x="-12vw" y="16vw" />
                 <Skill name="Prisma" x="28vw" y="12vw" />
+                <Skill name="Go-Land" x="38vw" y="5vw" />
+                <Skill name="React Native" x="28vw" y="12vw" />
 
 
                 
